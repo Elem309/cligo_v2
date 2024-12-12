@@ -11,7 +11,7 @@ import LottieView from 'lottie-react-native';
 
 
 
-const TicketView = ({ route }) => {
+const TicketView2 = ({ route }) => {
     const {pnr} = route.params
     const navigation = useNavigation();
     const [source , setSource] = React.useState('')
@@ -21,16 +21,16 @@ const TicketView = ({ route }) => {
     const [loadingLocations, setLoadingLocations] = React.useState(true);
     const [loadingBooking, setLoadingBooking] = React.useState(true);
     const [loadingTrip, setLoadingTrip] = React.useState(true);
-    React.useEffect(() => {
-        const backHandler = BackHandler.addEventListener(
-          'hardwareBackPress',
-          () =>{
-            navigation.navigate('SearchStack',{screen:"Home"})
-          }
-        );
+    // React.useEffect(() => {
+    //     const backHandler = BackHandler.addEventListener(
+    //       'hardwareBackPress',
+    //       () =>{
+    //         navigation.navigate('Bookings')
+    //       }
+    //     );
     
-        return () => backHandler.remove(); // Clean up the event listener
-      }, []);
+    //     return () => backHandler.remove(); // Clean up the event listener
+    //   }, []);
     
     useLayoutEffect(() => {
         navigation.setOptions({
@@ -207,4 +207,4 @@ const TicketView = ({ route }) => {
     );
 };
 
-export default TicketView;
+export default TicketView2;

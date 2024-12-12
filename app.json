@@ -2,8 +2,9 @@
   "expo": {
     "name": "Cligo",
     "slug": "Cligo",
-    "version": "1.0.0",
+    "version": "7",
     "orientation": "portrait",
+    "scheme": "com.cligollp.cligo",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
@@ -12,9 +13,16 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true
+        }
+      }
     },
     "android": {
+      "versionCode": 7,
+      "googleServicesFile" : "./googleservices.json",
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#ffffff"
@@ -25,7 +33,9 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-font"
+      "expo-font",
+      "@react-native-firebase/app", 
+      "@react-native-firebase/auth"
     ],
     "extra": {
       "eas": {

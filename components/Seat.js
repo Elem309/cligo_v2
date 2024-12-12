@@ -2,12 +2,13 @@ import { MaterialIcons } from '@expo/vector-icons/build/Icons';
 import React from 'react';
 import { TouchableOpacity, View, Text, StyleSheet } from 'react-native';
 
-const Seat = ({ id, isSelected, onSelect }) => {
+const Seat = ({ id, isSelected, onSelect ,isBooked}) => {
   return (
     <TouchableOpacity 
       onPress={() => onSelect(id)}
+    disabled={isBooked}
     >
-      <MaterialIcons name='event-seat' size={30} color={isSelected?"#ffcc00":"#f0f0f0"} />
+      <MaterialIcons name='event-seat' size={50} color={isSelected ? "#ffcc00" : (isBooked ? "#808080" : "#f0f0f0")}  />
     </TouchableOpacity>
   );
 };

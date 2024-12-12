@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "30770192165",
+    "project_id": "cligo-399307",
+    "storage_bucket": "cligo-399307.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30770192165:android:dbfcf005bd693f55c104cc",
+        "android_client_info": {
+          "package_name": "com.cligollp.cligo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "30770192165-76k6opdt30i1d3vac3s3oefkk2pi5gsg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cligollp.cligo",
+            "certificate_hash": "7cead4b6048466ff7c21cb6bb6e767df4f213179"
+          }
+        },
+        {
+          "client_id": "30770192165-j9hib9a3cup8lpaj9suqbm0q3j3uvlk7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBITjkeXYGW1npXtto7cFd6frYovlig9QY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "30770192165-j9hib9a3cup8lpaj9suqbm0q3j3uvlk7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
